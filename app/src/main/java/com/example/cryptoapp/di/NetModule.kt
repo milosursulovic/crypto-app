@@ -1,7 +1,6 @@
 package com.example.cryptoapp.di
 
 import com.example.cryptoapp.BuildConfig
-import com.example.cryptoapp.common.Constants
 import com.example.cryptoapp.data.remote.CoinPaprikaApi
 import dagger.Module
 import dagger.Provides
@@ -9,7 +8,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module

@@ -1,6 +1,6 @@
 package com.example.cryptoapp.di
 
-import com.example.cryptoapp.BuildConfig
+import com.example.cryptoapp.common.Constants
 import com.example.cryptoapp.data.remote.CoinPaprikaApi
 import dagger.Module
 import dagger.Provides
@@ -17,7 +17,7 @@ object NetModule {
     @Singleton
     fun providesRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(Constants.API_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
